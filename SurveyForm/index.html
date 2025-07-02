@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <h1 id="title">Kibichi's Survey Form</h1>
+      <p id="description">Please fill this form with the required information</p>
+    </div>
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+
+      <label for="number"id="number-label">Number <input id="number" type="number" min="1" max="100" placeholder="Enter your number"/></label>
+
+      <label for="dropdown">Which one do you preffer?
+        <select id="dropdown">
+          <option value="">(choose one)</option>
+          <option value="1">Podcasts</option>
+          <option value="2">Music</option>
+        </select>
+      </label>
+
+      <label> Which type of cars do you preffer?
+      <input type="radio" name="cars" value="1"/>Electric(EVs)</label>
+      <label><input type="radio" name="cars" value="2"/>Fuel-Powered</label>
+
+      <label>Favourite social media platform(Check all that apply)</label>
+      <label for="ig"><input id="ig"value="1" type="checkbox"/>Instagram</label>
+      <label for="tiktok"><input id="tiktok" value="2" type="checkbox"/>TikTok</label>
+      <label for="x"><input id="x"value="3" type="checkbox"/>X</label>
+      <label for="snapchat"><input id="snapchat" value="4" type="checkbox"/>Snapchat</label>
+      <label for="whatsapp"><input id='whatsapp' value="5" type="checkbox"/>WhatsApp</label>
+      <label for="youtube"><input id="youtube" value="6" type="checkbox"/>YouTube</label>
+      <label for="bio">Anything to tell Mr.Kibichi?:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Where do you live?"></textarea>
+        </label>
+      <input id="submit" type="submit" value="Submit" />
+
+    </form>
+  </body>
+</html>
